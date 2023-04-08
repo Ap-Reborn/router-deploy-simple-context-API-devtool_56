@@ -10,6 +10,7 @@ import Home from './Component/Home/Home';
 import MainLayout from './Component/Layout/MainLayout';
 import OrderReview from './Component/OrderReview/OrderReview';
 import toast, { Toaster } from 'react-hot-toast';
+import Grandpa from './Component/Grandpa/Grandpa';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path:'review',
         element: <OrderReview></OrderReview>
+      },
+      {
+        path:'/grandpa',
+        element:<Grandpa></Grandpa>
       }
     ]
   },
